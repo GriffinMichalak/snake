@@ -1,0 +1,41 @@
+.main {
+    font-family: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.heading {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(18, 30px); /* 10 columns of 50px each */
+    grid-template-rows: repeat(18, 30px);    /* 10 rows of 50px each */
+    gap: 0; /* No space between the boxes */
+}
+.box {
+    background-color: lightgray; /* Background color of each box */
+    border: 0.5px solid black;      /* Border to define the edges of the boxes */
+}
+
+.edge {
+    background-color: white;
+    border: none;
+}
+
+.snake {
+    background-color: red;
+}
+
+.food {
+    background-color: green;
+}
+
+// Mobile Design
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  }
