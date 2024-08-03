@@ -15,11 +15,11 @@
     display: grid;
     grid-template-columns: repeat(18, 30px); /* 10 columns of 50px each */
     grid-template-rows: repeat(18, 30px);    /* 10 rows of 50px each */
-    gap: 0; /* No space between the boxes */
+    gap: 0; 
 }
 .box {
-    background-color: lightgray; /* Background color of each box */
-    border: 0.5px solid black;      /* Border to define the edges of the boxes */
+    background-color: lightgray; 
+    border: 0.5px solid black;    
 }
 
 .edge {
@@ -35,7 +35,33 @@
     background-color: green;
 }
 
-// Mobile Design
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+button {
+    background-color: green;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+}
 
-  }
+button:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+    color: black;
+}
+
+// Mobile Design
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .main {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    #buttons {
+        width: 130%;
+    }
+
+    .heading {
+        width: 130%;
+    }
+}
